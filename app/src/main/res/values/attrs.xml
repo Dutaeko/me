@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="colorBackground" format="reference|color"/>
+    <attr name="colorBackgroundDark" format="reference|color"/>
+    <attr name="colorOnBackground" format="reference|color"/>
+    <attr name="colorOnBackgroundDark" format="reference|color"/>
+
+    <!--
+      Semantic surface / text tokens.
+      Declared as theme attributes (NOT @color resources) so every consumer resolves
+      them against the *active* theme, which means they follow:
+        - Material You / device dynamic color (DynamicColors overlay)
+        - the manual AppTheme.* palettes chosen in settings
+        - system light/dark mode
+      They are mapped to Material3 roles in Base.AppTheme (see values/themes.xml).
+    -->
+    <attr name="mikuAppBackground" format="color"/>
+    <attr name="mikuAppBackgroundElevated" format="color"/>
+    <attr name="mikuGlassSurface" format="color"/>
+    <attr name="mikuGlassSurfaceStrong" format="color"/>
+    <attr name="mikuGlassSurfaceSoft" format="color"/>
+    <attr name="mikuGlassStroke" format="color"/>
+    <attr name="mikuGlassStrokeStrong" format="color"/>
+    <attr name="mikuFieldSurface" format="color"/>
+    <attr name="mikuNavSurface" format="color"/>
+    <attr name="mikuNavDivider" format="color"/>
+    <attr name="mikuDetailCardBackground" format="color"/>
+    <attr name="mikuTextSoft" format="color"/>
+    <attr name="mikuTextMuted" format="color"/>
+    <!-- Overlays that must stay dark whatever the theme is (drawn on top of cover
+         art / video), so they keep pointing at fixed @color resources. -->
+    <attr name="mikuCardScrim" format="color"/>
+    <attr name="mikuPlayerSurface" format="color"/>
+</resources>
